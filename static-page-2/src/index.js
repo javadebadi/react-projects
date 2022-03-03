@@ -1,24 +1,30 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import logo from "./logo.svg"
+import "./style.css"
 
 function Header() {
   return (
-    <nav>
-      <img src={logo} width="100px"  alt="react-logo" />
+    <nav className="nav">
+      <img src={logo} alt="react-logo" />
+      <ul className="nav-items">
+        <li className="nav-item">Home</li>
+        <li className="nav-item">About</li>
+        <li className="nav-item">Contact</li>
+      </ul>
     </nav>
   )
 }
 
 function Title() {
   return (
-    <h1> React features </h1>
+    <h1 className="title"> React features </h1>
   )
 }
 
 function Content() {
   return (
-  <div>
+  <div className="content">
     <ul>
       <li>First created at 2013</li>
       <li>Is maintained by Facebook</li>
@@ -30,7 +36,7 @@ function Content() {
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <small>Javad Ebadi, All rights are reservered.</small>
     </footer>
   )
