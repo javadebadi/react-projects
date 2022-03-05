@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  padding: 10px;
+  box-shadow: 0 2px 3px rgb(220, 220, 220);
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero h1 {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.hero p {
+  padding: 0 20px 0 20px;
+}
+
+
+.card {
+  padding: 0px 20px;
+}
+
+.card-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-item {
+  padding: 0 20px 0 0;
+  max-width: 200px;
+}
+
+.card-item img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.card-item .title {
+  font-weight: bold;
+}
+
+.card-item .subtitle {
+  font-weight: 300;
+}
