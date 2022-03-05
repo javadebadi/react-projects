@@ -1,21 +1,15 @@
 import React from 'react'
-import card1 from '../images/card1.webp'
 
-export default function Card () {
-    return (
-        <section className="card">
-            <h2>Meet hosts around the world</h2>
-            <div className="card-items">
+export default function Card (props) {
+    return (      
                 <div className="card-item">
-                    <img src={card1} alt="card1"/>
+                    <img src={props.img} alt="card1"/>
                     <div className="title">
-                        Music history and culture tour with a DJ
+                        {props.title}
                     </div>
                     <div className="subtitle">
-                        Havana, Cuba
+                        {props.city}, {props.country}
                     </div>
                 </div>
-            </div>
-        </section>
     )
 }
