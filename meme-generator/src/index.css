@@ -22,6 +22,7 @@ code {
   width: 100%;
   background-image: linear-gradient(to right, rgb(117, 0, 163), rgb(239, 203, 248));
   color:white;
+  font-size: 1.1rem;
 }
 
 .header .banner {
@@ -38,4 +39,42 @@ code {
 .header .banner .title{
   padding-left: 5px;
   display: inline;
+}
+
+.meme-form {
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.meme-form-texts {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.meme-form-text {
+  width: 45%;
+  padding: 5px;
+  border: 1.5px;
+  border-style: solid;
+  border-color: gainsboro;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.meme-form .submit {
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  color: white;
+  background-image: linear-gradient(to right, rgb(117, 0, 163), rgb(158, 50, 185));
+  border-style: solid;
+  border-radius: 5px;
+  border: 2px;
+  border-color: white;
 }
