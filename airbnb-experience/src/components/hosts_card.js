@@ -4,13 +4,12 @@ import Card from './card.js'
 
 export default function HostsCard(props) {
 
-    const hostCardComponents = props.hostCardsData.map(hostcard => {
+    const hostCardData = props.hostCardsData
+
+    const hostCardComponents = hostCardData.map(hostcard => {
         return <Card
                 key = {hostcard.id}
-                img = {hostcard.img}
-                title = {hostcard.title}
-                country = {hostcard.country}
-                city = {hostcard.city}
+                item = {hostcard}
         />
     }
     )
