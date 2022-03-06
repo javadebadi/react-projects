@@ -6,6 +6,7 @@ export default function HostsCard(props) {
 
     const hostCardComponents = props.hostCardsData.map(hostcard => {
         return <Card
+                key = {hostcard.id}
                 img = {hostcard.img}
                 title = {hostcard.title}
                 country = {hostcard.country}
