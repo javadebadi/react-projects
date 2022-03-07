@@ -78,3 +78,8 @@ code {
   border: 2px;
   border-color: white;
 }
+
+.meme-image {
+  width: 80%;
+  margin: 0 auto;
+}
