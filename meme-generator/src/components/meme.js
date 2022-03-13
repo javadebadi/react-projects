@@ -1,13 +1,23 @@
 import React from "react"
-import memeData from "../data.js"
+
 
 function MemeForm () {
-
+    const [memeData, setMemeData] = React.useState()
     const [meme, setMeme] = React.useState({
         "topText": "Shut up",
         "bottomText": "and take my money",
         "randomImage": "https://i.imgflip.com/30b1gx.jpg"
     }
+    )
+
+    React.useEffect(
+        () => {
+            console.log("Effect")
+            fetch('https://api.imgflip.com/get_memes')
+            .then(res => res.json() )
+            .then( data => setMemeData(data))
+        },
+        []
     )
 
     function handleOnClick () {
